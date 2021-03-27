@@ -8,3 +8,5 @@
 
 - Main colors: [analogous style](https://www.canva.com/colors/color-wheel/), check amazon.com or tiki.vn for reference
 
+## Class name changes:
+- ?
