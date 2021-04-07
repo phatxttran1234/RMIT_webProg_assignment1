@@ -43,20 +43,52 @@
     padding: 10px;
 }
 
-nav {
+header nav {
     display: flex;
     flex-direction: row;
 }
 
-nav a {
+header nav a {
     text-decoration: none;
     color: #e1e5eb;
 }
 
-nav li {
+header nav li {
     display: inline-block;
     padding: 10px 10px;
     color: #d3d6db;
+}
+
+/*mall FAQs*/
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+main.mallFAQs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main.mallFAQs #listQuestions {
+    max-width: 800px;
+    background-color: #e5e3e8;
+    border: 1px solid black;
+    flex: 1 1 auto;
+}
+
+main.mallFAQs #listQuestions .question {
+    padding: 5px 10px;
+}
+
+main.mallFAQs #listQuestions .answer {
+    padding: 5px 30px;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 /*Shop section

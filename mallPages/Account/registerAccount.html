@@ -1,11 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="../../style/desktop1024.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    </head>
+
+    <body>
+        <header class="mallHeader">
+            <a href="index.html"><img id="mallLogo" src="../../resources/images/mallLogo.jpg" alt="mall logo"></a>
+            <h3 class="mallName">Shopping mall</h3>
+            <nav>
+                <ul>
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="copyright.html">Copyright</a></li>
+                    <li><a href="fees.html">Fees</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <form>
+                    <label for="emailAddress">Email address</label>
+                    <input type="email" id="emailAddress" name="emailAddress" placeholder="abcde@mail.com">
+                    <br>
+
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="098391312">
+                    <br>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                    <br>
+                    <label for="passwordRe">Retype password</label>
+                    <input type="password" id="passwordRe" name="passwordRe" minlength="8" required>
+                    <br>
+
+                    <label for="profilePic">Profile picture</label>
+                    <input type="file" id="profilePic" name="profilePic">
+                    <br>
+
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Minh">
+                    <br>
+
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Pham">
+                    <br>
+
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="somewhere">
+                    <br>
+
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="Ho Chi Minh">
+                    <br>
+
+                    <label for="zipcode">Zipcode</label>
+                    <input type="text" id="zipcode" name="zipcode" pattern="\d{4,6}">
+                    <br>
+
+                    <label for="country">Country</label>
+                    <select>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AL">Albania</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AU">Australia</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BW">Botswana</option>
+                        <option value="KH">Cambodia</option>
+                        <option value="VN">Viet Nam</option>
+                        <option value="YE">Yemen</option>
+                    </select>
+                    <br>
+
+                    <label for="accountType">Account type</label>
+                    <input type="radio" id="storeOwner" name="accountType" value="storeOwner">
+                    <label for="storeOwner">store owner</label>
+                    <input type="radio" id="shopper" name="accountType" value="shopper">
+                    <label for="shopper">shopper</label>
+                    <br>
+
+                    <div class="forOwner">
+                        <label for="busiName">Business name</label>
+                        <input type="text" id="busiName" name="busiName">
+                        <br>
+
+                        <label for="storeName">Store name</label>
+                        <input type="text" id="storeName" name="storeName">
+                        <br>
+
+                        <label for="storeType">Type of Store</label>
+                        <select>
+                            <option value="department">Department</option>
+                            <option value="grocery">Grocery</option>
+                            <option value="restaurant">Restaurant</option>
+                            <option value="clothing">Clothing</option>
+                            <option value="accessory">Accessory</option>
+                            <option value="pharmacy">Pharmacy</option>
+                            <option value="technology">Technology</option>
+                            <option value="pet">Pet</option>
+                            <option value="toy">Toy</option>
+                            <option value="speciality">Speciality</option>
+                            <option value="thrift">Thrift</option>
+                            <option value="service">Service</option>
+                            <option value="kiosk">Kiosk</option>
+                        </select>
+                        
+                        <br>
+                    </div>
+
+                    <input type="reset">
+                    <input type="submit" id="submitBtn" value="Submit here">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Footer</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">ToS</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+        <script src="../../scripts/mall_registerAccount.js"></script>
+    </body>
 </html>
