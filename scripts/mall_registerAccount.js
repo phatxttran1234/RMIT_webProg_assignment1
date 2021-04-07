@@ -1,12 +1,6 @@
-let formForOwner = document.querySelector(".forOwner");
+function handleClick(evt){
+    let formForOwner = document.querySelector(".forOwner");
 
-let radioForOwner = document.querySelector("#storeOwner");
-
-radioForOwner.addEventListener("change", () => {
-    /*
-    if (radioForOwner.checked) formForOwner.classList.add("hidden");
-    else formForOwner.classList.remove("hidden");
-    */
-   console.log(radioForOwner.checked);
-});
-
+    if (evt.value == "storeOwner") formForOwner.classList.remove("hidden");
+    else formForOwner.classList.add("hidden");
+}

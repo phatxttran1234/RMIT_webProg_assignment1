@@ -81,13 +81,13 @@
                     <br>
 
                     <label for="accountType">Account type</label>
-                    <input type="radio" id="storeOwner" name="accountType" value="storeOwner">
+                    <input type="radio" id="storeOwner" name="accountType" value="storeOwner" onclick="handleClick(this)">
                     <label for="storeOwner">store owner</label>
-                    <input type="radio" id="shopper" name="accountType" value="shopper">
+                    <input type="radio" id="shopper" name="accountType" value="shopper" onclick="handleClick(this)">
                     <label for="shopper">shopper</label>
                     <br>
 
-                    <div class="forOwner">
+                    <div class="forOwner hidden">
                         <label for="busiName">Business name</label>
                         <input type="text" id="busiName" name="busiName">
                         <br>
