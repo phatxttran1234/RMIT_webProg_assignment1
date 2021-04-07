@@ -1,0 +1,63 @@
+/*Fonts and reset*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Mall section
+****************************************/
+
+/*mall header*/
+.mallHeader {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px;
+
+    position: sticky;
+    top: 2px;
+    background-color: #5e6775;
+    border-radius: 10px;
+
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 2px;
+}
+
+#mallLogo {
+    width: 50px;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+.mallHeader > * {
+    margin: 0 5px;
+}
+
+.mallHeader h3 {
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e1e5eb;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px 10px;
+    color: #d3d6db;
+}
+
+/*Shop section
+****************************************/
