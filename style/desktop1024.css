@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: none;
 }
 
 /*Mall section
@@ -12,16 +13,13 @@
 
 /*mall header*/
 .mallHeader {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0 10px;
+    display: inline-block;
+    width: 100%;
+    padding: 0 20px;
 
     position: sticky;
     top: 2px;
     background-color: #5e6775;
-    border-radius: 10px;
 
     font-family: 'Open Sans', sans-serif;
     margin: 0 2px;
@@ -30,7 +28,7 @@
 #mallLogo {
     width: 50px;
     height: 100%;
-    border: 1px solid black;
+    float: left;
     border-radius: 15px;
     cursor:pointer;
 }
@@ -44,19 +42,59 @@
 }
 
 header nav {
-    display: flex;
-    flex-direction: row;
+    float: left;
 }
 
-header nav a {
+header nav li a {
     text-decoration: none;
+    display: inline-block;
     color: #e1e5eb;
+    font-weight: 600px;
 }
 
 header nav li {
     display: inline-block;
     padding: 10px 10px;
-    color: #d3d6db;
+}
+
+.toggle-btn {
+    width: 35px;
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    display: none;
+}
+
+.toggle-btn span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    float: left;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 991px){
+    .toggle-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        border-top: 1px solid #000;
+        padding-top: 20px;
+        margin-top: 30px;
+    }
+
+    nav ul li{
+        padding: 15px 10px;
+        width: 100%;
+    }
+
+    nav.show {
+        display: block;
+    }
 }
 
 /*mall FAQs*/
@@ -87,8 +125,66 @@ main.mallFAQs #listQuestions .answer {
     padding: 5px 30px;
 }
 
+/*mall register account */
 .hidden {
     display: none;
+}
+
+main.mallRegister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+main.mallRegister .registerForm {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+main.mallRegister .registerForm form > * {
+    margin: 10px;
+}
+
+main.mallRegister .registerForm form input {
+    padding: 5px;
+}
+
+main.mallRegister .registerForm form label {
+    width: 80px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+
+footer {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px;
+
+    position: absolute;
+    bottom: 0;
+    background-color: #5e6775;
+    border-radius: 10px;
+
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 2px;
+    width: 100%;
+}
+
+footer nav ul li{
+    display: inline-block;
+}
+
+.outerDiv {
+    height: fit-content;
+    width: 100%;
+    min-height: 100vh;
+    border: 1px solid black;
+    position: absolute;
+    top: 0px;
 }
 
 /*Shop section
