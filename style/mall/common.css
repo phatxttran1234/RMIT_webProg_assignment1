@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/*Header*/
+
+nav {
+    background: #222;
+    padding: 5px 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+.menu li a {
+    display: block;
+}
+
+.logo a {
+    font-size: 20px;
+}
+
+.button.secondary {
+    border-bottom: 1px #444 solid;
+}
+
+/*Mobile menu*/
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    cursor: pointer;
+    order: 1;
+}
+
+.item.mallName.active {
+    width: auto;
+    order: 1;
+    display: block;
+    flex: 1;
+    text-align: left;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+.bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    top: -5px;
+    width: 18px;
+}
+
+.bars::before,.bars::after {
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before {
+    top:5px;
+}
+
+.bars::after {
+    top: -5px;
+}
+
+/*Tablet menu*/
+@media all and (min-width: 768px){
+    .menu {
+        justify-content: center;
+    }
+
+    .item.mallName {
+        width: auto;
+        order: 1;
+        display: block;
+        flex: 1;
+        text-align: left;
+    }
+
+    .item.mallName.active {
+        display: block;
+    }
+
+    .toggle {
+        order: 2;
+    }
+}
+
+@media all and (min-width: 1024px){
+    .item {
+        display: block;
+        width: auto;
+    }
+
+    .item.mallName.active {
+        display: block;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .logo{
+        order: 0;
+    }
+
+    .item.mallName {
+        order: 1;
+    }
+
+    .item {
+        order: 2;
+    }
+
+    .menu li {
+        padding: 15px 10px;
+    }
+
+    .menu li.button {
+        padding-right: 0;
+    }
+}
+
+/*end header*/
