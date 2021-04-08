@@ -103,6 +103,14 @@ a:hover {
     top: -5px;
 }
 
+.item.item2 {
+    display: none;
+}
+
+.item.item2.visible {
+    display: block;
+}
+
 /*Tablet menu*/
 @media all and (min-width: 768px){
     .menu {
@@ -158,6 +166,12 @@ a:hover {
 
     .menu li.button {
         padding-right: 0;
+    }
+
+    .item.item2.visible {
+        order: 4;
+        width: 100%;
+        text-align: right;
     }
 }
 

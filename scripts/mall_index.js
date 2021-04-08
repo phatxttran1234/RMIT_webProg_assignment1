@@ -11,3 +11,17 @@ toggleBtn.addEventListener("click", () => {
         }
     }
 });
+
+let toggleSubMenu = document.querySelector(".subMenu2");
+toggleSubMenu.addEventListener("click", () => {
+    console.log("sub menu changed");
+    let allSubMenuItems = document.querySelectorAll(".item2");
+
+    for (let i = 0; i < allSubMenuItems.length; i++){
+        if (allSubMenuItems[i].classList.contains("visible")){
+            allSubMenuItems[i].classList.remove("visible");
+        } else {
+            allSubMenuItems[i].classList.add("visible");
+        }
+    }
+})
