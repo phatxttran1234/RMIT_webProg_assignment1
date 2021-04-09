@@ -21,7 +21,7 @@ body {
     top: 0;
 }
 
-.mallHeader.invisible.off {
+.mallHeader.invisible:not(.off) {
     top: -70px;
 }
 
@@ -150,10 +150,9 @@ a:hover {
 }
 
 @media all and (min-width: 1024px){
-    .mallHeader.visible, .mallHeader.invisible {
+    .mallHeader.visible, .mallHeader.invisible, .mallHeader.invisible:not(.off) {
         top: 0;
     }
-
 
     .item {
         display: block;
@@ -198,5 +197,6 @@ a:hover {
 /*end header*/
 
 main {
-    margin-top: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
