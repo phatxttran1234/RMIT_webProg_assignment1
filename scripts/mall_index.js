@@ -24,4 +24,23 @@ toggleSubMenu.addEventListener("click", () => {
             allSubMenuItems[i].classList.add("visible");
         }
     }
+
+    let menu = document.querySelector(".mallHeader");
+    menu.classList.toggle("off");
 })
+
+
+//for hiding the navbar
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    let menu = document.querySelector(".mallHeader");
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos && !menu.classList.contains("off")) {
+    document.querySelector("header").classList.add("visible");
+    document.querySelector("header").classList.remove("invisible");
+  } else if (!menu.classList.contains("off")) {
+    document.querySelector("header").classList.remove("visible");
+    document.querySelector("header").classList.add("invisible");
+  }
+  prevScrollpos = currentScrollPos;
+}
