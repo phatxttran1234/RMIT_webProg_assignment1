@@ -2,6 +2,11 @@ html {
   box-sizing: border-box;
 }
 
+img{
+  max-height: 280px;
+  width: 100%;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -36,13 +41,11 @@ html {
 
 .title {
   color: grey;}
+
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
   }
-img{
-  max-height: 280px;
-  width: 100%;
-}
+
 /*originally went with the design similar to the FAQ page, ran into display error, resulted in using w3school's design*/
