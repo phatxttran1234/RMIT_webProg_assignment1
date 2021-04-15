@@ -4,51 +4,88 @@
         <title>Order placement</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+        <link rel="stylesheet" href="../../style/store/common.css">
+        <link rel="stylesheet" href="../../style/store/orderPlacement/orderPlacement.css">
 
     <body>
-        <header>
+        <header class="mallHeader">
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li>
-                        <a href="#">Products</a> 
-                        <div>
-                            <a href="#">Browse Products by Category</a>
-                            <a href="#">Browse Products by Created Time</a>
-                        </div>
-                    </li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="menu">
+                    <li class="logo"><a href="#">Logo</a></li>
+                    <li class="item mallName"><a href="#">Shopping mall</a></li>
+    
+                    <li class="item"><a href="aboutUs.html">About us</a></li>
+                    <li class="item"><a href="fees.html">Copyright</a></li>
+                    <li class="item subMenu2"><a href="#">Browse</a></li>
+                    <li class="item item2"><a href="#">Browse By name</a></li>
+                    <li class="item item2"><a href="#">Browse By category</a></li>
+                    <li class="item"><a href="FAQs.html">FAQs</a></li>
+                    <li class="item"><a href="contact.html">Contact</a></li>
+    
+                    <li class="toggle"><span class="bars"></span><li>
                 </ul>
             </nav>
         </header>
 
         <main>
+            <section class="introduction">
+                <div><span class="title">Shopping cart</span> <span class="itemnumber">(3 items)</span></div>
+                <div class="storeName">Store ABC</div>
+            </section>
+
             <section class="storeCart">
                 <ul>
                     <li class="product">
-                        <div class="prodName">product 1</div>
-                        <div class="prodImg"><img src="../../../resources/" alt="product1 on display"></div>
-                        <div class="prodPrice">500vnd</div>
+                        <div class="prodImg"><img src="../../resources/images/item_3kittensInABlueJar.jpg" alt="product1 on display"></div>
+                        <div class="prodContent">
+                            <div class="prodDesc">
+                                <div class="prodName">2 kittens in a blue jar</div>
+                                <div class="prodPrice">500.000vnd</div>
+                            </div>
+                            <div class="prodQuanity">
+                                <label for="quanity">Quanity: </label>
+                                <input type="number" id="quanity" name="quanity" value="1">
+                            </div>
+                        </div>
                     </li>
                     <li class="product">
-                        <div class="prodName">product 2</div>
-                        <div class="prodImg"><img src="../../../resources/" alt="product1 on display"></div>
-                        <div class="prodPrice">200vnd</div>
+                        <div class="prodImg"><img src="../../resources/images/item_3kittensInABlueJar.jpg" alt="product1 on display"></div>
+                        <div class="prodContent">
+                            <div class="prodDesc">
+                                <div class="prodName">2 kittens in a blue jar</div>
+                                <div class="prodPrice">500.000vnd</div>
+                            </div>
+                            <div class="prodQuanity">
+                                <label for="quanity">Quanity: </label>
+                                <input type="number" id="quanity" name="quanity" value="1">
+                            </div>
+                        </div>
                     </li>
                     <li class="product">
-                        <div class="prodName">product 3</div>
-                        <div class="prodImg"><img src="../../../resources/" alt="product1 on display"></div>
-                        <div class="prodPrice">400vnd</div>
+                        <div class="prodImg"><img src="../../resources/images/item_3kittensInABlueJar.jpg" alt="product1 on display"></div>
+                        <div class="prodContent">
+                            <div class="prodDesc">
+                                <div class="prodName">2 kittens in a blue jar</div>
+                                <div class="prodPrice">500.000vnd</div>
+                            </div>
+                            <div class="prodQuanity">
+                                <label for="quanity">Quanity: </label>
+                                <input type="number" id="quanity" name="quanity" value="1">
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </section>
 
-            <section>
-                <form>
-                    <button>Continue Shoppping</button>
-                    <button>Order</button>
+            <section class="checkout">
+                <div class="summary">
+                    <span class="priceText">Total amount:</span>
+                    <span class="priceTotal">1.500.000vnd</span>
+                </div>
+
+                <form class="options">
+                    <button class="continueBtn">Continue Shoppping</button>
+                    <button class="orderBtn">Order</button>
                 </form>
             </section>
         </main>
