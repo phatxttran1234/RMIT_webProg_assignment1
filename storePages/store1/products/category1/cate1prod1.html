@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product 1</title>
 
-    <link rel="stylesheet" href="../style/mall/common.css">
+    <link rel="stylesheet" href="../../../../style/mall/common.css">
+    <link rel="stylesheet" href="D:\Homework\intro to pain\Web programing project\RMIT_webProg_assignment1\style\mall\Product\product.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body>
@@ -30,41 +31,54 @@
         </header>
 
         <main>
-            <section class="productDetails">
-                <div class="product">
-                    <div class="prodName"><a href="#">product 1</a></div>
-                    <div class="prodImg"><a href="#"><img src="../../../resources/" alt="product1 on display"></a></div>
-                    <div class="prodDes">this sucks</div>
-                    <div class="prodPrice">500vnd</div>
-                    <div class="prodTime">12/12/2021</div>
-                </div>
-            </section>
-
-            <section class="buyingOptions">
-                <form>
-                    <button class="buyingOption">Add</button>
-                    <button class="buyingOption">Buy now</button>
-                </form>
-            </section>
+          <h2 style="text-align:center">Product Card</h2>
+            <div class="card">
+              <img src="D:\Homework\intro to pain\Web programing project\RMIT_webProg_assignment1\resources\images\Anh.jpg" alt="product1 on display" style="width:100%">
+              <h1>Tailored Jeans</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p><button id:"product">Add to Cart</button> <button>Buy Now</button></p>
+            </div>
 
             <section class="recommended">
-                <ul>
-                    <li class="product">
-                        <div class="prodName">product 1</div>
-                        <div class="prodImg"><img src="../../../resources/" alt="product1 on display"></div>
-                        <div class="prodPrice">500vnd</div>
-                    </li>
-                    <li class="product">
-                        <div class="prodName">product 2</div>
-                        <div class="prodImg"><img src="../../../resources/" alt="product1 on display"></div>
-                        <div class="prodPrice">200vnd</div>
-                    </li>
-                    <li class="product">
-                        <div class="prodName">product 3</div>
-                        <div class="prodImg"><img src="../../../resources/" alt="product1 on display"></div>
-                        <div class="prodPrice">400vnd</div>
-                    </li>
-                </ul>
+                <h2 align="center"> Recommended</h2>
+                <div class="row">
+                <div class="item">
+                  <div class="cover">
+                    <img src="/w3images/team1.jpg" alt="product1 on display" style="width:100%">
+                    <div class="container">
+                      <h2>Product Name</h2>
+                      <p class="description">Desc</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                      <p><button class="button">More Detail</button></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="cover">
+                    <img src="D:\Homework\intro to pain\Web programing project\RMIT_webProg_assignment1\resources\images\Minh.jpg" alt="product1 on display" style="width:100%">
+                    <div class="container">
+                      <h2>Product Name</h2>
+                      <p class="description">Desc</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                      <p><button class="button">More Detail</button></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="cover">
+                    <img src="D:\Homework\intro to pain\Web programing project\RMIT_webProg_assignment1\resources\images\Dat.jpg" alt="product1 on display" style="width:100%">
+                    <div class="container">
+                      <h2>Product Name</h2>
+                      <p class="description">Desc</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                      <p><button class="button">More Detail</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
         </main>
 
@@ -93,5 +107,6 @@
       		    </div>
             </nav>
         </footer>
+    </div>
     </body>
 </html>
