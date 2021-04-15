@@ -1,71 +1,41 @@
-.box {
-    background-color: #fff;
-    min-height: 100vh;
-    position: relative;
+html {
+  box-sizing: border-box;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.TeamColumn {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .TeamColumn {
     width: 100%;
+    display: block;
+  }
 }
 
-.mallAboutUs h1{
-    text-align: center;
-    margin: 20px 0;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#AboutUs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3px;
+.container {
+  padding: 0 16px;
 }
 
-#AboutUs article {
-    max-width: 600px;
-    padding: 1em;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 0 0px 2px #000;
-    transition: box-shadow 0.15s ease-in-out;
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-#AboutUs article:hover {
-    box-shadow: 0 0px 7px #52485e;
-}
-
-#AboutUs article .top_half{
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #b8a6a5;
-    line-height: 1.2;
-}
-
-#AboutUs article .bottom_half{
-    line-height: 1.3;
-}
-
-#AboutUs article .top_half span{
-    font-weight: bold;
-}
-
-#AboutUs article .bottom_half span{
-    font-weight: bold;
-}
-
-.AboutUs1 {
-	float: left;
-	width: 50%;
-	padding: 35px;
-	}
-
-.TeamRow:after {
-	content: " ";
-	display: table;
-	clear: both;
+.title {
+  color: grey;
 }
 
 @media screen and (max-width:600px) {
@@ -73,3 +43,10 @@ footer {
     width: 100%;
   }
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/*originally went with the design similar to the FAQ page, ran into display error, resulted in using w3school's design*/
