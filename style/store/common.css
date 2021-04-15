@@ -200,3 +200,7 @@ main {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+footer {
+    display: none;
+}
