@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*Header*/
@@ -25,21 +26,21 @@ body {
     top: -70px;
 }
 
-nav {
+.mallHeader nav {
     background: #222;
     padding: 5px 20px;
 }
 
-ul {
+.mallHeader ul {
     list-style-type: none;
 }
 
-a {
+.mallHeader a {
     color: white;
     text-decoration: none;
 }
 
-a:hover {
+.mallHeader a:hover {
     text-decoration: underline;
 }
 
@@ -199,9 +200,8 @@ a:hover {
 main {
     padding-top: 70px;
     padding-bottom: 70px;
+    min-height: 100vh;
 }
-
-/*footer*/
 
 footer {
     position: absolute;
@@ -211,6 +211,11 @@ footer {
     margin: 0px auto 0;
     padding: 10px 0 0px;
     }
+
+.mallFooter nav{
+    background-color: #222;
+    
+}
 
 .footerheading{
     font-weight: 700; color: #fff; margin: 0 0 15px; font-size: 16px;
@@ -227,22 +232,20 @@ footer p{
     line-height: 3;
 }
 
-
-
-footer nav .row{
+footer nav .FooterRow{
     display: flex;
     align-items: stretch;
     justify-content: space-evenly;
   }
 
 
-.column {
+.FooterColumn {
 	float: left;
 	width: 33.33%;
 	padding: 15px;
 	}
 
-.row:after {
+.FooterRow:after {
 	content: " ";
 	display: table;
 	clear: both;
@@ -255,7 +258,7 @@ footer nav .row{
       overflow: hidden;
     }
   
-    footer nav .row{
+    footer nav .FooterRow{
       display: flex;
       align-items: stretch;
       justify-content: space-evenly;
@@ -273,5 +276,3 @@ footer nav .row{
       overflow: scroll;
     }
   }
-
-/*end footer*/
