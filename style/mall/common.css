@@ -216,11 +216,6 @@ footer {
 	padding: 15px;
 	}
 
-#footer {
-	color: #808A93;
-	text-decoration: underline;
-}
-
 .row:after {
 	content: " ";
 	display: table;
