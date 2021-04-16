@@ -1,18 +1,22 @@
+body {
+    background-color: #f2f4f7;;
+}
+
 main {
     margin: 0 auto;
-    background-color: cornsilk;
     display: flex;
     flex-direction: column;
 }
 
 main section {
-    background-color: cyan;
+    background-color: white;
     width: 100%;
 }
 
 /*introduction*/
 .title {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.25em;
 }
 
 .itemnumber {
@@ -20,26 +24,28 @@ main section {
 }
 
 .introduction div {
-    padding: 5px;
+    padding: 10px 20px;
 }
 
 .storeName {
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.1em;
 }
 
 /*storeCart*/
 .product {
-    height: 125px;
+    height: 150px;
     margin-bottom: 10px;
     display: flex;
-    padding: 0 10px;
+    padding: 20px 10px;
+    background-color: white;
+    box-shadow: 0 0 1px grey;
 }
 
 
 .prodContent {
     padding-left: 10px;
     width: 100%;
-    background-color: darkred;
     display: flex;
     flex-direction: column;
 }
@@ -55,7 +61,7 @@ main section {
     padding-right: 20px;
     height: 100%;
     flex-basis: 70%;
-    background-color: darkgray;
+    font-weight: 300;
 }
 
 .prodPrice {
@@ -64,38 +70,59 @@ main section {
     flex-basis: 30%;
     max-width: 120px;
     padding: 5px;
-    background-color: darkkhaki;
 }
 
 .prodQuanity {
+    border-top: 0.5px solid black;
     height: 30%;
     width: 100%;
     padding: 5px 10px;
-    background-color: white;
+    background-color: #e4e6eb;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items:  center;
 }
 
+.prodQuanity button {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 400;
+    color: white;
+}
+
+.prodQuanity button:hover{
+    box-shadow: 0 0 10px white;
+}
+
+.prodQuanity label {
+    font-weight: 300;
+    font-size: 0.75em;
+}
+
 .prodQuanity input[type=number]{
-    width: 30px;
+    width: 40px;
     margin-left: 10px;
+    border: none;
+    padding: 2px;
+    box-shadow: 0px 0px 2px grey;
+    border-radius: 5px;
     text-align: center;
+    font-size: 1em;
 }
 
 /*product display*/
 .prodImg {
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
-    border: 2px solid black;
 }
 
 .prodImg img {
     height: auto;
+    max-height: 100%;
     max-width: 100%;
 }
 
@@ -104,22 +131,40 @@ main section {
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    background-color: darkseagreen;
+    box-shadow: 0 0 1px grey;
+}
+
+.priceText {
+    font-weight: 300;
+    font-size: 0.9em;
 }
 
 .options {
-    background-color: darkseagreen;
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 0 1px grey;
+}
+
+.options button {
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+
+.options button:hover{
+    text-shadow: 0 0 2px white;
+    box-shadow: 0 0 2px blue;
 }
 
 .orderBtn {
-    padding: 5px;
+    background-color: #ba133a;
 }
 
 .continueBtn {
-    padding: 5px;
+    background: darkgray;
 }
 
 @media all and (min-width: 768px) {
@@ -139,17 +184,26 @@ main section {
     }
 
     .storeCart {
+        padding: 0 10px;
         flex-basis: 75%;
     }
 
     .product {
-        height: 150px;
+        border-radius: 5px;
+        height: 175px;
         margin-bottom: 15px;
     }
 
     .prodImg {
-        width: 150px;
-        height: 150px;
+        width: 175px;
+    }
+
+    .prodQuanity button {
+        padding: 7px;
+    }
+
+    .prodQuanity label {
+        font-size: 1em;
     }
 
     .checkout {
@@ -164,5 +218,17 @@ main section {
 
     .prodQuanity {
         padding: 5px 20px;
+    }
+
+    .product {
+        height: 200px;
+    }
+
+    .prodImg {
+        width: 200px;
+    }
+
+    .prodQuanity button {
+        padding: 10px;
     }
 }
