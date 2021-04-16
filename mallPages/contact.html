@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
 
-    <link rel="stylesheet" href="../style/desktop1024.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-</head>
-<body>
-    <header class="mallHeader">
-        <a href="index.html"><img id="mallLogo" src="../resources/images/mallLogo.jpg" alt="mall logo"></a>
-        <h3 class="mallName">Shopping mall</h3>
-        <nav>
-            <ul>
-                <li><a href="aboutUs.html">About us</a></li>
-                <li><a href="copyright.html">Copyright</a></li>
-                <li><a href="fees.html">Fees</a></li>
-                <li><a href="FAQs.html">FAQs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <link rel="stylesheet" href="../style/mall/common.css">
+        <link rel="stylesheet" href="../style/mall/Contact/contact.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    </head>
+
+    <body>
+        <div class="box">
+            <header class="mallHeader">
+                <nav>
+                    <ul class="menu">
+                        <li class="logo"><a href="#">Logo</a></li>
+                        <li class="item mallName"><a href="#">Shopping mall</a></li>
+
+                        <li class="item"><a href="aboutUs.html">About us</a></li>
+                        <li class="item"><a href="fees.html">Copyright</a></li>
+                        <li class="item subMenu2"><a href="#">Browse</a></li>
+                        <li class="item item2"><a href="#">Browse By name</a></li>
+                        <li class="item item2"><a href="#">Browse By category</a></li>
+                        <li class="item"><a href="FAQs.html">FAQs</a></li>
+                        <li class="item"><a href="contact.html">Contact</a></li>
+
+                        <li class="toggle"><span class="bars"></span><li>
+                    </ul>
+                </nav>
+            </header>
 
     <main>
         <form action="#" method="POST">
@@ -44,48 +52,58 @@
             <input type="number" name="phone" id="phone" minlength="10" maxlength="12" placeholder="0999999999" required>
             <br>
 
-            <p>Contact Method</p>
-            <br>
-            <input type="radio" name="method" id="phoneMethod" value="phone">
-            <label for="phoneMethod">Phone</label>
-            <input type="radio" name="method" id="emailMethod" value="email">
-            <label for="emailMethod">Email</label>
+
+            <p style="padding-bottom: 20px;"><b>Contact day</b></p>
+            
+              <label for="mon" class="WeekDay">Monday</label>
+              <input type="checkbox" name="contactDay" id="mon" value="monday">
+              <label for="tues" class="WeekDay">Tuesday</label>
+              <input type="checkbox" name="contactDay" id="tues" value="tuesday">
+              <label for="wed" class="WeekDay">Wednesday</label>
+              <input type="checkbox" name="contactDay" id="wed" value="wednesday">
+              <label for="thurs" class="WeekDay">Thursday</label>
+              <input type="checkbox" name="contactDay" id="thurs" value="thursday">
+              <label for="fri" class="WeekDay">Friday</label>
+              <input type="checkbox" name="contactDay" id="fri" value="friday">
+              <label for="sat" class="WeekDay">Saturday</label>
+              <input type="checkbox" name="contactDay" id="sat" value="saturday">
+              <label for="sun" class="WeekDay">Sunday</label>
+              <input type="checkbox" name="contactDay" id="sund" value="sunday">
+              
             <br>
 
-            <p>Contact days</p>
-            <input type="checkbox" name="contactDay" id="mon" value="monday">
-            <label for="mon">Monday</label>
-            <input type="checkbox" name="contactDay" id="tues" value="tuesday">
-            <label for="tues">Tuesday</label>
-            <input type="checkbox" name="contactDay" id="wed" value="wednesday">
-            <label for="wed">Wednesday</label>
-            <input type="checkbox" name="contactDay" id="thurs" value="thursday">
-            <label for="thurs">Thursday</label>
-            <input type="checkbox" name="contactDay" id="fri" value="friday">
-            <label for="fri">Friday</label>
-            <input type="checkbox" name="contactDay" id="sat" value="saturday">
-            <label for="sat">Saturday</label>
-            <input type="checkbox" name="contactDay" id="sund" value="sunday">
-            <label for="sun">Sunday</label>
-            <br>
-
-            <textarea name="message" id="message" cols="30" rows="10">Message</textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
 
             <input type="reset" value="Reset">
             <input type="submit" value="Submit">
         </form>
     </main>
-
-
     <footer>
-        <p>Footer</p>
-        <nav>
-            <ul>
-                <li><a href="#">Copyright</a></li>
-                <li><a href="#">ToS</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-        </nav>
-    </footer>
+      <nav>
+        <div class="row">
+          
+        <div class="column">
+        <div class="footerheading">Support</div>
+        <ul><a href=#>FAQ</a></ul>
+        <ul><a href=#>Contact Form</a></ul>
+        <ul><a href=#>Fee</a></ul>
+        </div>
+        <div class="column">
+        <div class="footerheading">Info</div>
+        <ul><a href=#>About us</a></ul>
+        <ul><a href=#>ToS</a></ul>
+        <ul><a href=#>Privacy Policy</a></ul>
+        <ul><a href=#>CopyRight</a></ul>
+        </div>
+        <div class="column">
+        <div class="footerheading">Join Us</div>
+        <ul><a href=#>Sign up</a></ul>
+        <ul color="white" style="text-decoration: underline;"><b><p>Had an account?</p></b></ul>
+        <ul><a href=#>Sign in</a></ul>
+        </div>
+        </div>
+      </nav>
+      </footer>
+  </div>
 </body>
 </html>
