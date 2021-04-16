@@ -208,7 +208,26 @@ footer {
     bottom: 0;
     width: 100%;
 	max-height: 75px;
+    margin: 0px auto 0;
+    padding: 10px 0 0px;
+    }
+
+.footerheading{
+    font-weight: 700; color: #fff; margin: 0 0 15px; font-size: 16px;
 }
+
+footer a, footer a:visited{
+    color:#ac9e95; 
+    text-decoration:none;
+    line-height: 3;
+}
+
+footer p{
+    color:white;
+    line-height: 3;
+}
+
+
 
 footer nav .row{
     display: flex;
