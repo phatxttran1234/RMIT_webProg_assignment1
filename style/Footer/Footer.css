@@ -2,7 +2,8 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-	max-height: 75px;
+    background: darkgray;
+	  max-height: 75px;
     margin: 0px auto 0;
     padding: 10px 0 0px;
     }
