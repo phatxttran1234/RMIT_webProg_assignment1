@@ -196,7 +196,7 @@ body {
 }
 
 /*end header*/
-
+/*footer*/
 main {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -251,7 +251,18 @@ footer nav .FooterRow{
 	clear: both;
 }
 
-@media screen and (max-width: 600px) {  
+@media screen and (max-width: 600px) { 
+    .mallFooter a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    
+    .mallFooter{
+        flex-direction: column;
+        overflow: scroll;
+    }
+
     footer {  
       width: 100%;
       max-height: 20vh;
@@ -276,3 +287,4 @@ footer nav .FooterRow{
       overflow: scroll;
     }
   }
+  /*end of footer*/
