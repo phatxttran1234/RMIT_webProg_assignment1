@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
 
-        <link rel="stylesheet" href="../../style/mall/common.css">
-        <link rel="stylesheet" href="../../style/mall/registerAcc/register.css">
+        <link rel="stylesheet" href="../style/mall/common.css">
+        <link rel="stylesheet" href="../style/mall/Contact/contact.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
     </head>
 
@@ -53,29 +52,24 @@
             <input type="number" name="phone" id="phone" minlength="10" maxlength="12" placeholder="0999999999" required>
             <br>
 
-            <p>Contact Method</p>
-            <br>
-            <input type="radio" name="method" id="phoneMethod" value="phone">
-            <label for="phoneMethod">Phone</label>
-            <input type="radio" name="method" id="emailMethod" value="email">
-            <label for="emailMethod">Email</label>
-            <br>
 
-            <p>Contact days</p>
-            <input type="checkbox" name="contactDay" id="mon" value="monday">
-            <label for="mon">Monday</label>
-            <input type="checkbox" name="contactDay" id="tues" value="tuesday">
-            <label for="tues">Tuesday</label>
-            <input type="checkbox" name="contactDay" id="wed" value="wednesday">
-            <label for="wed">Wednesday</label>
-            <input type="checkbox" name="contactDay" id="thurs" value="thursday">
-            <label for="thurs">Thursday</label>
-            <input type="checkbox" name="contactDay" id="fri" value="friday">
-            <label for="fri">Friday</label>
-            <input type="checkbox" name="contactDay" id="sat" value="saturday">
-            <label for="sat">Saturday</label>
-            <input type="checkbox" name="contactDay" id="sund" value="sunday">
-            <label for="sun">Sunday</label>
+            <p style="padding-bottom: 20px;"><b>Contact day</b></p>
+            
+              <label for="mon" class="WeekDay">Monday</label>
+              <input type="checkbox" name="contactDay" id="mon" value="monday">
+              <label for="tues" class="WeekDay">Tuesday</label>
+              <input type="checkbox" name="contactDay" id="tues" value="tuesday">
+              <label for="wed" class="WeekDay">Wednesday</label>
+              <input type="checkbox" name="contactDay" id="wed" value="wednesday">
+              <label for="thurs" class="WeekDay">Thursday</label>
+              <input type="checkbox" name="contactDay" id="thurs" value="thursday">
+              <label for="fri" class="WeekDay">Friday</label>
+              <input type="checkbox" name="contactDay" id="fri" value="friday">
+              <label for="sat" class="WeekDay">Saturday</label>
+              <input type="checkbox" name="contactDay" id="sat" value="saturday">
+              <label for="sun" class="WeekDay">Sunday</label>
+              <input type="checkbox" name="contactDay" id="sund" value="sunday">
+              
             <br>
 
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
@@ -109,5 +103,6 @@
           </div>
         </nav>
     </footer>
+  </div>
 </body>
 </html>
