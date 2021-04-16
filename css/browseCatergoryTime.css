@@ -39,6 +39,21 @@ footer{
     .brand, .review, .price{
         display: none;
     }
+
+    .btn .button{
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 14px;
+        margin: 5px 10px;;
+        box-shadow: 0px 5px 5px #b2bec3;
+    }
+
+    .btn .button:hover{
+        background: #BBBCB6;
+        color: white;
+    }
+
+
     
     .product-list{
         display: grid;
@@ -119,9 +134,7 @@ footer{
         right: 12%;
     }
 
-    .catergory select{
-        width: 100%;
-    }
+   
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -130,7 +143,7 @@ footer{
         display: flex;  
     }
     .left-container{
-        width: 30%;
+        width: 20%;
         margin-left: 20px;
         margin-top: 20px;
         text-align: left;
@@ -142,13 +155,33 @@ footer{
     }
     
     .review-number{
-        margin-left: 5px;
-        font-size: 12px;
+        margin-left: 2px;
+        font-size: 10px;
         color: #746D69;
     }
 
+    .btn .button{
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 3px;
+        box-shadow: 0px 5px 10px #b2bec3;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    
+
+    .btn .button:hover{
+    background: #BBBCB6;
+    color: white;
+    }
+
     .star{
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .catergory h3{
@@ -240,9 +273,7 @@ footer{
         margin-left: 2px;
     }
 
-    .catergory select{
-        width: 60%;
-    }
+    
 }
 
 @media only screen and (min-width: 1025px) {
@@ -251,7 +282,7 @@ footer{
         display: flex;  
     }
     .left-container{
-        min-width: 20%;
+        min-width: 17%;
         margin-left: 2rem;
         margin-top: 5rem;
         text-align: left;
@@ -270,6 +301,26 @@ footer{
 
     .brand label{
         font-size: 1.25rem;
+    }
+
+    .btn .button{
+        font-size: 12px;
+        min-width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 13px;
+        border-radius: 8px;
+        box-shadow: 0px 5px 12px #b2bec3;
+    }
+
+    
+
+    .btn .button:hover{
+        background: #BBBCB6;
+        color: white;
     }
     
     .product-list{

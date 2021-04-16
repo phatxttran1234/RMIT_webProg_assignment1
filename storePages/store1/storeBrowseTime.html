@@ -4,6 +4,9 @@
         <title>Store 1 time created</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/browseCatergoryTime.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -25,40 +28,465 @@
         </header>
 
         <main>
-            <form>
-                <label for="products">Sorted by: </label>
-                <select name="products" id="products">
-                    <option value="newest">Newest First</option>
-                    <option value="oldest">Oldest First</option>
-                </select>
-                <br>
-                <input type="button" value="search" onclick="">
-            </form>
+            <div class="main-content">
 
-            <div class="listOfProducts">
-                <!--a random list of products-->
-                <div class="product">
-                    <div class="prodName"><a href="#">product 1</a></div>
-                    <div class="prodImg"><a href="#"><img src="../../../resources/" alt="product1 on display"></a></div>
-                    <div class="prodDes">this sucks</div>
-                    <div class="prodPrice">500vnd</div>
-                    <div class="prodTime">12/12/2021</div>
+                <div class="left-container">
+                    <form>
+                        <div class="catergory">
+                            <h3>Sort by time</h3>
+                            <div class="btn">
+                                <button class="newest button">Newest Items</button>
+                                <button class="oldest button">Oldest Items</button>
+                            </div>
+                
+                        </div>
+                        
+                        <div class="brand catergory">
+                            <h3>Brand</h3>
+                            <input type="checkbox" name="brand" id="brand" value="gucci">
+                            <label for="brands">Gucci</label>
+                            <br>
+                            <input type="checkbox" name="brand" id="brand" value="channel">
+                            <label for="brands">Channel</label>
+                            
+                            <br>
+                            <input type="checkbox" name="brand" id="brand" value="buberry">
+                            <label for="brands">Buberry</label>
+                            
+                            <br>
+                            <input type="checkbox" name="brand" id="brand" value="dior">
+                            <label for="brands">Dior</label>
+                            
+                            <br>
+                            <input type="checkbox" name="brand" id="brand" value="hermes">
+                            <label for="brands">Hermes</label>
+                        </div>
+                        
+                        <div class="review catergory">
+                            <h3>Custormer Reviews</h3>
+                            <div class="star">
+                                <span>&#9733</span>
+                                <span>&#9733</span>
+                                <span>&#9733</span>
+                                <span>&#9733</span>
+                                <span>&#9733</span>
+                                <span class="review-number">(1024)</span>
+                            </div>
+
+                            <div class="star">
+                                <span>&#9733</span>
+                                <span>&#9733</span>
+                                <span>&#9733</span>
+                                <span>&#9733</span>
+                                <span>&#9734</span>
+                                <span class="review-number">(400)</span>
+                            </div>
+
+                            <div class="star">
+                                <span>&#9733</span>
+                                <span>&#9733</span>
+                                <span>&#9733</span>
+                                <span>&#9734</span>
+                                <span>&#9734</span>
+                                <span class="review-number">(100)</span>
+                            </div>
+
+                            <div class="star">
+                                <span>&#9733</span>
+                                <span>&#9733</span>
+                                <span>&#9734</span>
+                                <span>&#9734</span>
+                                <span>&#9734</span>
+                                <span class="review-number">(30)</span>
+                            </div>
+
+                            <div class="star">
+                                <span>&#9733</span>
+                                <span>&#9734</span>
+                                <span>&#9734</span>
+                                <span>&#9734</span>
+                                <span>&#9734</span>
+                                <span class="review-number">(10)</span>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="price catergory">
+                            <h3>Price Range</h3>
+                        </div>
+                        
+                        
+                        
+                        
+
+                        
+                    </form>
+
+
                 </div>
-                <div class="product">
-                    <div class="prodName"><a href="#">product 2</a></div>
-                    <div class="prodImg"><a href="#"><img src="../../../resources/" alt="product2 on display"></a></div>
-                    <div class="prodDes">this sucks</div>
-                    <div class="prodPrice">200vnd</div>
-                    <div class="prodTime">12/12/2021</div>
-                </div>
-                <div class="product">
-                    <div class="prodName"><a href="#">product 3</a></div>
-                    <div class="prodImg"><a href="#"><img src="../../../resources/" alt="product3 on display"></a></div>
-                    <div class="prodDes">this sucks</div>
-                    <div class="prodPrice">400vnd</div>
-                    <div class="prodTime">12/12/2021</div>
+                
+                
+                <div class="product-list">
+                    <!--a random list of products-->
+                    <div class="card">
+                        <div class="product-imgage">
+                            <img src="/img/product_!.jpeg" alt="product1 on display">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <a href="#">Apple T-shirt with a lot of money</a>
+                                </div>
+                                <div class="product-description">by Apple</div>
+                            </div>
+                            <div class="product-rating">
+                                <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9734</span>
+                                    <span class="review-number">(400)</span>
+                            </div>
+                            <div class="price-row">
+                                <p class="product-price"><span class="dollar">$</span>250</p>
+                                <p class="product-price">$300</p>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="card">
+                        <div class="product-imgage">
+                            <img src="/img/product_!.jpeg" alt="product1 on display">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <a href="#">Apple T-shirt with a lot of money</a>
+                                </div>
+                                <div class="product-description">by Apple</div>
+                            </div>
+                            <div class="product-rating">
+                                <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9734</span>
+                                    <span class="review-number">(400)</span>
+                            </div>
+                            <div class="price-row">
+                                <p class="product-price"><span class="dollar">$</span>250</p>
+                                <p class="product-price">$300</p>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+
+
+                    <div class="card">
+                        <div class="product-imgage">
+                            <img src="/img/product_!.jpeg" alt="product1 on display">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <a href="#">Apple T-shirt with a lot of money</a>
+                                </div>
+                                <div class="product-description">by Apple</div>
+                            </div>
+                            <div class="product-rating">
+                                <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9734</span>
+                                    <span class="review-number">(400)</span>
+                            </div>
+                            <div class="price-row">
+                                <p class="product-price"><span class="dollar">$</span>250</p>
+                                <p class="product-price">$300</p>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="card">
+                        <div class="product-imgage">
+                            <img src="/img/product_!.jpeg" alt="product1 on display">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <a href="#">Apple T-shirt with a lot of money</a>
+                                </div>
+                                <div class="product-description">by Apple</div>
+                            </div>
+                            <div class="product-rating">
+                                <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9734</span>
+                                    <span class="review-number">(400)</span>
+                            </div>
+                            <div class="price-row">
+                                <p class="product-price"><span class="dollar">$</span>250</p>
+                                <p class="product-price">$300</p>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="card">
+                        <div class="product-imgage">
+                            <img src="/img/product_!.jpeg" alt="product1 on display">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <a href="#">Apple T-shirt with a lot of money</a>
+                                </div>
+                                <div class="product-description">by Apple</div>
+                            </div>
+                            <div class="product-rating">
+                                <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9734</span>
+                                    <span class="review-number">(400)</span>
+                            </div>
+                            <div class="price-row">
+                                <p class="product-price"><span class="dollar">$</span>250</p>
+                                <p class="product-price">$300</p>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="product-imgage">
+                            <img src="/img/product_!.jpeg" alt="product1 on display">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <a href="#">Apple T-shirt with a lot of money</a>
+                                </div>
+                                <div class="product-description">by Apple</div>
+                            </div>
+                            <div class="product-rating">
+                                <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9734</span>
+                                    <span class="review-number">(400)</span>
+                            </div>
+                            <div class="price-row">
+                                <p class="product-price"><span class="dollar">$</span>250</p>
+                                <p class="product-price">$300</p>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="card">
+                        <div class="product-imgage">
+                            <img src="/img/product_!.jpeg" alt="product1 on display">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <a href="#">Apple T-shirt with a lot of money</a>
+                                </div>
+                                <div class="product-description">by Apple</div>
+                            </div>
+                            <div class="product-rating">
+                                <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9734</span>
+                                    <span class="review-number">(400)</span>
+                            </div>
+                            <div class="price-row">
+                                <p class="product-price"><span class="dollar">$</span>250</p>
+                                <p class="product-price">$300</p>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="card">
+                        <div class="product-imgage">
+                            <img src="/img/product_!.jpeg" alt="product1 on display">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <a href="#">Apple T-shirt with a lot of money</a>
+                                </div>
+                                <div class="product-description">by Apple</div>
+                            </div>
+                            <div class="product-rating">
+                                <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9734</span>
+                                    <span class="review-number">(400)</span>
+                            </div>
+                            <div class="price-row">
+                                <p class="product-price"><span class="dollar">$</span>250</p>
+                                <p class="product-price">$300</p>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="card">
+                        <div class="product-imgage">
+                            <img src="/img/product_!.jpeg" alt="product1 on display">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <a href="#">Apple T-shirt with a lot of money</a>
+                                </div>
+                                <div class="product-description">by Apple</div>
+                            </div>
+                            <div class="product-rating">
+                                <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9734</span>
+                                    <span class="review-number">(400)</span>
+                            </div>
+                            <div class="price-row">
+                                <p class="product-price"><span class="dollar">$</span>250</p>
+                                <p class="product-price">$300</p>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+
+
+                    <div class="card">
+                        <div class="product-imgage">
+                            <img src="/img/product_!.jpeg" alt="product1 on display">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <a href="#">Apple T-shirt with a lot of money</a>
+                                </div>
+                                <div class="product-description">by Apple</div>
+                            </div>
+                            <div class="product-rating">
+                                <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9734</span>
+                                    <span class="review-number">(400)</span>
+                            </div>
+                            <div class="price-row">
+                                <p class="product-price"><span class="dollar">$</span>250</p>
+                                <p class="product-price">$300</p>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+
+
+                    <div class="card">
+                        <div class="product-imgage">
+                            <img src="/img/product_!.jpeg" alt="product1 on display">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <a href="#">Apple T-shirt with a lot of money</a>
+                                </div>
+                                <div class="product-description">by Apple</div>
+                            </div>
+                            <div class="product-rating">
+                                <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9734</span>
+                                    <span class="review-number">(400)</span>
+                            </div>
+                            <div class="price-row">
+                                <p class="product-price"><span class="dollar">$</span>250</p>
+                                <p class="product-price">$300</p>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+
+
+                    <div class="card">
+                        <div class="product-imgage">
+                            <img src="/img/product_!.jpeg" alt="product1 on display">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <a href="#">Apple T-shirt with a lot of money</a>
+                                </div>
+                                <div class="product-description">by Apple</div>
+                            </div>
+                            <div class="product-rating">
+                                <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9733</span>
+                                    <span>&#9734</span>
+                                    <span class="review-number">(400)</span>
+                            </div>
+                            <div class="price-row">
+                                <p class="product-price"><span class="dollar">$</span>250</p>
+                                <p class="product-price">$300</p>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+
+            
+                    </div>
                 </div>
             </div>
+            
         </main>
 
         <footer>

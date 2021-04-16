@@ -22,35 +22,27 @@ body{
 
 @media only screen and (max-width: 767px) {
     /* For mobile device */
-    main {
-        text-align: center;
+    header{
+        min-width: 100vw;
+        min-height: 15vh;
+        overflow: hidden;
+        background: rgb(240, 240, 240);
     }
-    /* .subscription-plan-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 1rem;
+    
+    main{
+        min-width: 100vw;
+        min-height: 70vh;
+        background: rgb(240, 240, 240);
+        overflow: scroll;
+    }
+    
+    footer{
+        min-width: 100vw;
+        min-height: 15vh;
+        background: rgb(243, 241, 241);
+        overflow: hidden;
     }
 
-
-    .price-column {
-        display: flex;
-        align-items: flex-start;
-        flex-grow: 1;
-        max-width: 250px;
-        min-height: 150px;
-        flex-basis: 0;
-        background-color: white;
-        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4);
-        border-radius: 10px;
-        padding: 2rem;
-        
-    }
-    .price-column.higlighted {
-        font-size: small;
-    } */
     .wrapper {
         display: grid;
         grid-template-columns: repeat(4, auto);
@@ -84,7 +76,7 @@ body{
         font-size: 1rem;
         align-items: center;
         justify-content: center;
-        color: white;
+        color: #111;
     }
 
     .dollar-sign {
@@ -100,18 +92,6 @@ body{
         margin-bottom: 0.25rem;
     }
 
-    .box.header-basic{
-        background-color: RGB(247, 202, 201);
-    }
-
-    .box.header-pro{
-        background-color: green;
-    }
-
-    .box.header-premium{
-        background-color: aqua;
-    }
-
     .row{
         display: contents;
     }
@@ -123,31 +103,7 @@ body{
     main {
         text-align: center;
     }
-    /* .subscription-plan-container{
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        width: 100%;
-        margin: 1rem;
-    }
-
-    .price-column {
-        background-color: white;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-        border-radius: 10px;
-        padding: 3rem;
-        flex-grow: 1;
-        max-width: 275px;
-        flex-basis: 0;
-    }
-    .price-column.higlighted {
-        background: rgb(20,203,64);
-        background: -moz-linear-gradient(148deg, rgba(20,203,64,1) 30%, rgba(24,140,29,1) 94%);
-        background: -webkit-linear-gradient(148deg, rgba(20,203,64,1) 30%, rgba(24,140,29,1) 94%);
-        background: linear-gradient(148deg, rgba(20,203,64,1) 30%, rgba(24,140,29,1) 94%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#14cb40",endColorstr="#188c1d",GradientType=1);
-        color: rgb(254, 254, 254);
-    } */
+    
     .wrapper {
         display: grid;
         grid-template-columns: repeat(4, auto);
@@ -218,88 +174,6 @@ body{
 @media only screen and (min-width: 1025px) {
     /* For desktop */
     
-    /* .subscription-plan-container{
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        width: 100%;
-        margin: 1rem;
-    }
-
-    .price-column {
-        background: rgb(115,209,139);
-        background: -moz-linear-gradient(148deg, rgba(115,209,139,1) 49%, rgba(187,179,104,1) 100%);
-        background: -webkit-linear-gradient(148deg, rgba(115,209,139,1) 49%, rgba(187,179,104,1) 100%);
-        background: linear-gradient(148deg, rgba(115,209,139,1) 49%, rgba(187,179,104,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#73d18b",endColorstr="#bbb368",GradientType=1);
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-        border-radius: 10px;
-        padding: 2rem;
-        flex-grow: 1;
-        max-width: 275px;
-        flex-basis: 0;
-    }
-
-    .price-column.higlighted {
-        background: rgb(203,39,39);
-        background: -moz-linear-gradient(148deg, rgba(203,39,39,1) 29%, rgba(205,222,98,1) 100%);
-        background: -webkit-linear-gradient(148deg, rgba(203,39,39,1) 29%, rgba(205,222,98,1) 100%);
-        background: linear-gradient(148deg, rgba(203,39,39,1) 29%, rgba(205,222,98,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cb2727",endColorstr="#cdde62",GradientType=1);
-        color: rgb(254, 254, 254);
-        margin-top: -1rem;
-        margin-bottom: -1rem;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-
-    .price-header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-weight: bold;
-    }
-
-    .price {
-        display: flex;
-        font-size: 2.5rem;
-    }
-
-    .dollar-sign {
-        font-size: 1rem;
-        margin-top: 0.5rem;
-        margin-right: 0.2rem;
-    }
-
-    .monthly-fee {
-        font-size: 1rem;
-        align-self: flex-end;
-        text-transform: uppercase;
-        margin-bottom: 0.25rem;
-    }
-
-
-
-    .plan-name {
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
-
-    .divider {
-        height: 1px;
-        width: 100%;
-        background-color: rgba(0,0,0, 0.2);
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .price-column.higlighted .divider{
-        background-color: blanchedalmond;
-    } */
-
-
-
     .wrapper {
         display: grid;
         grid-template-columns: repeat(4, auto);
