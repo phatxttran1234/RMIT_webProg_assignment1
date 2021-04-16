@@ -7,11 +7,11 @@ main {
     width: 100%;
     max-width: 1000px;
     box-shadow: 0 0 10px black;
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 /*title*/
-section.copyright_title {
+section.pri_title {
     padding: 20px; 
     font-weight: 700;
     font-size: 23px;
@@ -19,30 +19,36 @@ section.copyright_title {
 
 
 /*copyright intro*/
-.copyright_intro {
-    background: #e1ebe4;
+.pri_intro {
+    background: #edebeb;
     border-radius: 10px;
     font-weight: 400;
     font-size: 0.9em;
 }
 
-.copyright_intro_text{
+.pri_intro_text{
     padding: 10px;
 }
 
 /*copyright content*/
-.copyright_content {
+.pri_content {
     padding: 5px;
     margin-top: 30px;
 }
 
-.copyright_content_title {
+.pri_content_text {
+    margin-left: 20px;
+}
+
+.pri_content_title {
     font-weight: 700;
     font-size: 18px;
 }
 
-.copyright_content_text {
-    padding: 10px;
+.text_item {
+    color: red;
+    font-weight: 700;
+    font-size: 1.1em;
 }
 
 .redColor {
@@ -50,12 +56,11 @@ section.copyright_title {
 }
 
 /*lastword*/
-.copyright_lastword {
+.pri_lastword {
     padding: 10px;
 }
 
-
-.copyright_lastword_title {
+.pri_lastword_title {
     font-weight: 700;
     font-size: 17px;
 }

@@ -11,7 +11,7 @@ main {
 }
 
 /*title*/
-section.copyright_title {
+section.tos_title {
     padding: 20px; 
     font-weight: 700;
     font-size: 23px;
@@ -19,30 +19,30 @@ section.copyright_title {
 
 
 /*copyright intro*/
-.copyright_intro {
-    background: #e1ebe4;
+.tos_intro {
+    background: #edebeb;
     border-radius: 10px;
     font-weight: 400;
     font-size: 0.9em;
 }
 
-.copyright_intro_text{
+.tos_intro_text{
     padding: 10px;
 }
 
 /*copyright content*/
-.copyright_content {
+.tos_content {
     padding: 5px;
     margin-top: 30px;
 }
 
-.copyright_content_title {
-    font-weight: 700;
-    font-size: 18px;
+.tos_content_text {
+    margin-left: 20px;
 }
 
-.copyright_content_text {
-    padding: 10px;
+.tos_content_title {
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .redColor {
@@ -50,12 +50,11 @@ section.copyright_title {
 }
 
 /*lastword*/
-.copyright_lastword {
+.tos_lastword {
     padding: 10px;
 }
 
-
-.copyright_lastword_title {
+.tos_lastword_title {
     font-weight: 700;
     font-size: 17px;
 }
