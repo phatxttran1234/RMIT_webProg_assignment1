@@ -1,3 +1,10 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+	max-height: 75px;
+}
+
 .column {
 	float: left;
 	width: 33.33%;
@@ -10,8 +17,19 @@
 	clear: both;
 }
 
+footer nav .row{
+	display: flex;
+	align-items: stretch;
+	justify-content: space-evenly;
+  }
+
 @media screen and (max-width:600px) {
   .column {
     width: 100%;
+  }
+  footer nav .row{
+	display: flex;
+	align-items: stretch;
+	justify-content: space-evenly;
   }
 }
