@@ -60,6 +60,10 @@ text-align: center;
   grid-template-columns: auto auto auto auto;
   }
 
+  .aboutUsHeader{
+    line-height: 2;
+  }
+
 @media screen and (max-width: 600px) {
 
   img{
