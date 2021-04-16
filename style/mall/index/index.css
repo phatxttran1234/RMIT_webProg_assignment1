@@ -1,0 +1,20 @@
+/* horizontal menu */
+.listScrollMenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.listScrollMenu_item {
+    display: inline-block;
+}
+
+.listScrollMenu_item_icon {
+    width: 100px;
+    height: 100px;
+}
+
+.listScrollMenu_item_icon img {
+    max-height: 100%;
+    max-width: 100%;
+}
+

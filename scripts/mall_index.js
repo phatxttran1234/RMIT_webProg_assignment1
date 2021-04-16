@@ -1,3 +1,5 @@
+//navigation bar//
+
 let toggleBtn = document.querySelector(".toggle");
 toggleBtn.addEventListener("click", () => {
     console.log("clicked");
@@ -44,3 +46,4 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+

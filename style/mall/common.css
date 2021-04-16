@@ -199,4 +199,11 @@ a:hover {
 main {
     padding-top: 70px;
     padding-bottom: 70px;
+    min-height: 100vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
