@@ -4,22 +4,24 @@
         <title>Store 1</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../../style/store/common.css">
     </head>
 
     <body>
-        <header>
+        <header class="mallHeader">
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li>
-                        <a href="#">Products</a> 
-                        <div>
-                            <a href="#">Browse Products by Category</a>
-                            <a href="#">Browse Products by Created Time</a>
-                        </div>
-                    </li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="menu">
+                    <li class="logo"><a href="#">Store 1</a></li>
+                    <li class="item mallName"><a href="#">Home</a></li>
+    
+                    <li class="item"><a href="aboutUs.html">About us</a></li>
+                    <li class="item subMenu2"><a href="#">Products</a></li>
+                    <li class="item item2"><a href="#">Browse By Category</a></li>
+                    <li class="item item2"><a href="#">Browse By Created time</a></li>
+                    <li class="item lastItem"><a href="contact.html">Contact</a></li>
+    
+                    <li class="toggle"><span class="bars"></span><li>
                 </ul>
             </nav>
         </header>
@@ -71,5 +73,7 @@
                 </ul>
             </nav>
         </footer>
+
+        <script src="../../scripts/store_index.js"></script>
     </body>
 </html>

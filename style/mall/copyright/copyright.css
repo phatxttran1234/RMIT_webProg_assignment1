@@ -1,0 +1,13 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1000px;
+}
+
+section.copyright_title {
+    padding: 20px; 
+    font-weight: 
+}

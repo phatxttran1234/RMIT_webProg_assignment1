@@ -5,33 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../style/desktop1024.css">
+    <link rel="stylesheet" href="../style/mall/common.css">
+    <link rel="stylesheet" href="../style/mall/copyright/copyright.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/6af8588f7a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="mallHeader">
-        <a href="index.html"><img id="mallLogo" src="../resources/images/mallLogo.jpg" alt="mall logo"></a>
-        <h3 class="mallName">Shopping mall</h3>
         <nav>
-            <ul>
-                <li><a href="aboutUs.html">About us</a></li>
-                <li><a href="copyright.html">Copyright</a></li>
-                <li><a href="fees.html">Fees</a></li>
-                <li><a href="FAQs.html">FAQs</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="menu">
+                <li class="logo"><a href="#">Logo</a></li>
+                <li class="item mallName"><a href="#">Shopping mall</a></li>
+
+                <li class="item"><a href="aboutUs.html">About us</a></li>
+                <li class="item"><a href="fees.html">Copyright</a></li>
+                <li class="item subMenu2"><a href="#">Browse</a></li>
+                <li class="item item2"><a href="#">Browse By name</a></li>
+                <li class="item item2"><a href="#">Browse By category</a></li>
+                <li class="item"><a href="FAQs.html">FAQs</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+
+                <li class="toggle"><span class="bars"></span><li>
             </ul>
         </nav>
     </header>
 
     <main> 
-        <section>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque fuga animi deserunt sunt vel molestias veritatis blanditiis ipsam molestiae accusamus impedit ducimus commodi perferendis rem, eligendi facilis iure quas et.</p>
-        </section>
+        <div class="wrapper">
+            <section class="copyright_title">Copyright policies</section>
 
+            <section class="copyright_intro">
+                <div>Mall provides translated versions of our Help Center as a convenience, though they are not meant to change the content of our policies. The English version is the official language we use to enforce our policies. To view this article in a different language, use the language dropdown at the bottom of the page.</div>
+                <div>We abide by local copyright laws and protect the rights of copyright holders, so we don’t allow ads that are unauthorized to use copyrighted content. If you are legally authorized to use copyrighted content, apply for certification to advertise. If you see unauthorized content, submit a copyright-related complaint.</div>
+            </section>
+
+            <section class="copyright_content">
+                <p><i class="fas fa-times"></i>Unauthorized sites or software that capture, copy, or provide access to copyrighted content</p>
+                <p><i class="fas fa-times"></i>Sites or apps that facilitate unauthorized offline distribution of copyrighted content</p>
+                <p><i class="fas fa-times"></i>Software, sites, or tools that remove digital rights management (DRM) technology from copyrighted material or otherwise circumvent copyright (irrespective of whether the intended use is legitimate or not</p>
+            </section>
+
+            <section class="copyright_lastword">
+                <div class="copyright_lastword_title">Need help?</div>
+                <div class="copyright_lastword_content">If you have questions about our policies, let us know: Contact Mall Support</div>
+            </section>
+        </div>
     </main>
        
     <footer>
-        <p>Footer</p>
         <nav>
             <ul>
                 <li><a href="#">Copyright</a></li>
@@ -40,5 +61,7 @@
             </ul>
         </nav>
     </footer>
+
+    <script src="../scripts/mall_index.js"></script>
 </body>
 </html>
