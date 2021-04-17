@@ -212,26 +212,7 @@ footer {
 
 @media only screen and (max-width: 767px) {
     /* For phone */
-    header{
-        min-width: 100vw;
-        min-height: 5vh;
-        overflow: hidden;
-        background: rgb(240, 240, 240);
-    }
-    
-    main{
-        min-width: 100vw;
-        min-height: 60vh;
-        background: rgb(240, 240, 240);
-        overflow: scroll;
-    }
-    
-    footer{
-        min-width: 100vw;
-        min-height: 35vh;
-        background: rgb(243, 241, 241);
-        overflow: hidden;
-    }
+   
     
     
     .container{
@@ -245,7 +226,7 @@ footer {
         position: relative;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, 30%);
+        transform: translate(-50%, 50%);
        
     }
 
@@ -326,33 +307,18 @@ footer {
         font-size: 16px;
         padding: 60px 0;
         margin: 0 23px;
-       
+        color: #111;
+    }
+    .end-box p a{
+        text-decoration: none;
+        font-size: 16px;
+        color: rgb(44, 13, 218);
+        cursor: pointer;
     }
  }
  
  @media only screen and (min-width: 768px) and (max-width: 1024px) {
      /* For Tablet */
-     header{
-        min-width: 100vw;
-        min-height: 10vh;
-        overflow: hidden;
-        background: rgb(240, 240, 240);
-    }
-    
-    main{
-        min-width: 100vw;
-        min-height: 60vh;
-        background: rgb(240, 240, 240);
-        overflow: hidden;
-    }
-    
-    footer{
-        min-width: 100vw;
-        min-height: 30vh;
-        background: rgb(243, 241, 241);
-        overflow: hidden;
-
-    }
     
     
     .container{
@@ -366,7 +332,7 @@ footer {
         position: relative;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, 10%);
+        transform: translate(-50%, 50%);
         border: 1px solid #bfb5ac;
     }
     
@@ -445,30 +411,18 @@ footer {
         font-size: 15px;
         margin: 50px 30px;
     }
+
+    .end-box p a{
+        text-decoration: none;
+        font-size: 16px;
+        color: rgb(44, 13, 218);
+        cursor: pointer;
+    }
  }
  
  @media only screen and (min-width: 1025px) {
      /* For Desktop */
-     header{
-        min-width: 100vw;
-        min-height: 5vh;
-        overflow: hidden;
-        background: rgb(240, 240, 240);
-    }
     
-    main{
-        min-width: 100vw;
-        min-height: 65vh;
-        background: rgb(240, 240, 240);
-        overflow: hidden;
-    }
-    
-    footer{
-        min-width: 100vw;
-        min-height: 30vh;
-        background: rgb(243, 241, 241);
-        overflow: hidden;
-    }
     
     
     .container{
@@ -560,6 +514,13 @@ footer {
         text-decoration: none;
         font-size: 15px;
         margin: 50px 30px;
+    }
+
+    .end-box p a{
+        text-decoration: none;
+        font-size: 15px;
+        color: rgb(44, 13, 218);
+        cursor: pointer;
     }
  } 
 
