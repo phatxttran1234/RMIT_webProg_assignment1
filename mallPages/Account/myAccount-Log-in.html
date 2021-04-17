@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/forgetPass.css">
-    <title>Password Assisstance</title>
+    <title>Log In</title>
+    <link rel="stylesheet" href="/css/myAccount_log_in.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body>  
     <header class="mallHeader">
         <nav>
             <ul class="menu">
@@ -25,38 +27,40 @@
             </ul>
         </nav>
     </header>
-        
+
+    <main> 
         <div class="container">
-            
-            <div class="description-box">
-                <h3>Password Assistance</h3>
-                <p>Enter the email address or phone number associated with your mall account</p>
-            </div>
+            <h3>Sign-In</h3>
             <div class="box">
                 <form action="#" method="post">
                     <div class="input-field">
-                        <label for="email" class="label-name">
-                            <span class="content-name">Email address or phone number</span>
+                        <input type="text" name="username" id="username" autocomplete="off" required>
+                        <label for="username" class="label-name">
+                            <span class="content-name">Username</span>
                         </label>
-                        <input type="email" name="email" id="email" required autocomplete="off">
                     </div>
+                    
+                    <div class="input-field">
+                        <input type="password" name="password" id="password" required>
+                        <label for="password" class="label-name">
+                            <span class="content-name">Password</span>
+                        </label>
+                    </div>
+                    
                     
                     <input class="submit" type="submit" value="Continue">
                 </form>
-            </div>
-            
+            </div> 
             <div class="end-box">
-                <p>If you no longer use the email address or phone number associated with your account, you may contact <a href="#">Custormer Service</a> for help restoring to access to your account.</p>  
+                <p><a href="#" class="pass">Forget password</a></p>  
+                <p><a href="#" class="register">Register new account</a></p>  
             </div>
             
         </div>
             
     </main>
-    
+
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur rem laudantium earum? Officia quae veniam aspernatur, provident dignissimos quasi veritatis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur rem laudantium earum? Officia quae veniam aspernatur, provident dignissimos quasi veritatis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur rem laudantium earum? Officia quae veniam aspernatur, provident dignissimos quasi veritatis.</p>
     </footer>
 </body>
 </html>
